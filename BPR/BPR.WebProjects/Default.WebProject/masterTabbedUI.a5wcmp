@@ -1,0 +1,1444 @@
+{
+    "$schema": "UX",
+    "$definition": {
+        "style_name": "Alpha-Dark-Green",
+        "style_type": "Alpha Five",
+        "resolveAbstractClassNames": true,
+        "builderVersionNumber": 1,
+        "overrideStyleName": "Default",
+        "FontSize": "Medium",
+        "A5ContainerClassPadding": "4px",
+        "JavaScriptFunctionDeclarations": "var logoutCognito = function() { \n \n\tvar target = tbiObj.__logoutPage;\n\tif(typeof target == 'undefined') target = 'login.a5w';\n\ttarget = target + '?logout=cognitoLogout';\n\t//alert(target)\n\t{tabbedUI.object}.logout(target);\n\tlocation.href = target\n\n}\n\nvar noLogoutCognito = function() { \n\tvar target = tbiObj.__logoutPage;\n\tif(typeof target == 'undefined') target = 'login.a5w';\n\tlocation.href = target + '?nologin';\n}\nvar logoutMessage = function() { \n\tif(!{tabbedUI.object}.logoutMessageWin) { \n\t\t{tabbedUI.object}.logoutMessageWin = new A5.Window({\n\t\t\ttheme: '{tabbedUI.style}',\n\t\t\tanimation: {show: {type: 'css-slide'}, hide: {type: 'css-slide'}},\n\t\t\ttitle: { html: ''},\n\t\t\tbody: {\n\t\t\t\t\n\t\t\t\tcontent: { \n\t\t\t\t\ttype: 'static',\n\t\t\t\t\thtml: '<div style=\"font-size: 12pt;text-align: center; padding: 20px 6px; width: 4in; xheight: 2in;\">Do you want to also logout from Cognito?</div>'\n\t\t\t\t}\n\t\t\t},\n\t\t\tbuttons: { \n\t\t\t\titems: [\n\t\t\t\t\t{html: '<div style=\"font-size: 12pt; padding: 5px;\">Yes</div>', action: function() { {tabbedUI.object}.logoutMessageWin.hide();setTimeout(function() {logoutCognito()},0)}},\n\t\t\t\t\t{html: '<div style=\"font-size: 12pt;padding: 5px;\">No</div>', action: function() {{tabbedUI.object}.logoutMessageWin.hide();setTimeout(function() {noLogoutCognito()},0)}}, \n\t\t\t\t\t{html: '<div style=\"font-size: 12pt;padding: 5px;\">Cancel</div>', action: 'cancel'} \n\t\t\t\t]\n\t\t\t}\n\t\t\t\n\t\t})\n\t}\n\t{tabbedUI.object}.logoutMessageWin.show('dock','top')\n}",
+        "layoutType": "ControlWidth",
+        "pageTitle": "Beauty Pro Rewards",
+        "serverSideEvents": {
+            "onTabbedUIInitialize": "function onTabbedUIInitialize as v (e as p)\n\n\nsleep(1); \n\ndim e.javascript as c = default \"\"\nif eval_valid(\"request.variables.__logoutPage\")\n\te.javascript =  e.javascript + \"tbiObj.__logoutPage = '\" + request.variables.__logoutPage + \"';\" \nend if \n\nif eval_valid(\"request.variables.__loginUsingCognito\")\n\te.javascript =  e.javascript + crlf() +  \"tbiObj.__loginUsingCognito = 'yes';  \"\nend if\n\n\n\n\n\nend function\n"
+        },
+        "activeLanguage": "<Default>",
+        "datePicker": {
+            "dayNames": "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+            "monthNames": "January,February,March,April,May,June,July,August,September,October,November,December",
+            "firstDayOfWeek": 1,
+            "todayButtonText": "Today",
+            "closeButtonText": "Close",
+            "OKButtonText": "OK"
+        },
+        "clientSideDateFormat": "MM/dd/yyyy",
+        "info": {
+            "createdBy": "selwyn",
+            "dateCreated": "2023-12-19",
+            "dateLastEdited": "2024-10-15",
+            "revisionnumber": 66
+        },
+        "checkSessionEvery": 1,
+        "warningIntervalBeforeExpiration": 1,
+        "sessionTimeOutWarningMessage": "Your session will expire in {secondsToSessionEnd} seconds. Click the button to extend your session.",
+        "sessionExtendSessionButtonLabel": "Extend Session",
+        "sessionTimeoutWarningDialogTitle": "Warning",
+        "sessionHasExpiredMessage": "Your session has expired.",
+        "sessionHasExpiredButtonLabel": "OK",
+        "sessionHasExpiredAction": "Nothing",
+        "sessionHasExpiredRedirectPage": "<self>",
+        "sessionHasExpiredDialogTitle": "Notice",
+        "sessionHasExpiredOKButtonJavascript": "<ReloadThisPage>",
+        "login": {
+            "twofactoreventfunctionname": "",
+            "loginPrompt": "Login",
+            "logoutPrompt": "Logout",
+            "loginActionType": "FullReload",
+            "showPromptForCreateNewAccount": false,
+            "newAccountLinkLocation": "MenuBar",
+            "promptForCreateNewAccount": "Register",
+            "createNewAccountComponent": "",
+            "createNewAccountWindowTitle": "Create New Account",
+            "customLeftMenuBarHTML": "",
+            "customCenterMenuBarHTML": "",
+            "loggedInMessageTemplate": "Logged in as: {userName}",
+            "dialog": {
+                "usernameLabel": "User Name",
+                "passwordLabel": "Password",
+                "hasFreeformLayout": false,
+                "freeformLayout": "",
+                "userNameLabelStyle": "",
+                "userNameFieldStyle": "",
+                "passwordLabelStyle": "",
+                "passwordFieldStyle": "",
+                "animation": true,
+                "animate": {
+                    "show": {
+                        "method": "slide",
+                        "speed": "slow"
+                    },
+                    "hide": {
+                        "method": "slide",
+                        "speed": "slow"
+                    }
+                },
+                "centerPrompts": true,
+                "width": "",
+                "height": "",
+                "loginButtonLabel": "Login",
+                "loginButtonStyle": "",
+                "cancelButtonLabel": "Cancel",
+                "cancelButtonStyle": "",
+                "headerText": "",
+                "footerText": "",
+                "disableAutocompleteOnUsername": false,
+                "disableAutocompleteOnPassword": true,
+                "tfa": {
+                    "codepromptlabel": "",
+                    "codepromptstyle": "",
+                    "codefieldstyle": "",
+                    "headerText": "Enter your authorization code",
+                    "footerText": "",
+                    "centerPrompts": true
+                }
+            }
+        },
+        "page_fields": [
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{B=White,Light Blue}{Data=4680a401-3140-4acf-be97-3622d2350929}{I:'$$control.html.advButton'} [Tabbed UI Button: Adress Hierachy (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{Data=4680a401-3140-4acf-be97-3622d2350929}{I:'$$control.html.advButton'} [Tabbed UI Button: Countries_ux (UX Component)] �",
+                "idInternal": "4680a401-3140-4acf-be97-3622d2350929",
+                "parentContainer": -1,
+                "displayOD": "{B=White,Light Blue}{Data=4680a401-3140-4acf-be97-3622d2350929}{I:'$$control.html.advButton'} [Tabbed UI Button: Countries_ux (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{B=White,Light Blue}{Data=4680a401-3140-4acf-be97-3622d2350929}{I:'$$control.html.advButton'} [Tabbed UI Button: Adress Hierachy (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Adress Hierachy",
+                        "actionType": "Component",
+                        "paneTitle": "Countries_ux",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "autoRefreshOnFocus": true,
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Countries_ux",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width: 1.5in; text-align: left;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "javascript": {
+                        "onclick": "action_{alias}_4680a401_3140_4acf_be97_3622d2350929(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Adress Hierachy (UX Component)]"
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 1.5in; text-align: left;\" title=\"\"  onclick=\"action_{alias}_4680a401_3140_4acf_be97_3622d2350929(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Adress Hierachy</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_4680a401_3140_4acf_be97_3622d2350929'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Countries_ux';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_COUNTRIES__102923EFAI';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Countries_ux', title: 'Countries_ux',  name :'{alias}_COUNTRIES__102923EFAI', type:'dialog2', data: go , autoRefresh: true   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "layout_directive_button",
+                "display": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=497d75b3_a25b_4b3e_8ea5_62dde20db883}{I:'$$control.button'} [Button: Logout] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=497d75b3_a25b_4b3e_8ea5_62dde20db883}{I:'$$control.button'} [Button: Logout] �",
+                "idInternal": "497d75b3_a25b_4b3e_8ea5_62dde20db883",
+                "parentContainer": -1,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=497d75b3_a25b_4b3e_8ea5_62dde20db883}{I:'$$control.button'} [Button: Logout] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=497d75b3_a25b_4b3e_8ea5_62dde20db883}{I:'$$control.button'} [Button: Logout] �",
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" id=\"BUTTON_1\" class=\"[class.dialogButton]\" style=\"\" title=\"\"  onclick=\"if(tbiObj.__loginUsingCognito == 'yes') { \tlogoutMessage(); } else { \tvar target = tbiObj.__logoutPage; \tif(typeof target == 'undefined') target = 'login.a5w'; \ttarget = target + '?nologin'; \t{tabbedUI.object}.logout(target); }\"  >Logout</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false,
+                "v": {
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "buttonText": "Logout",
+                    "Class": "<Default>",
+                    "cssGridItemPropertiesJSON": "",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "id": "BUTTON_1",
+                    "labelClass": "<Default>",
+                    "labelPosition": "None",
+                    "labelWidth": "{Global.LabelWidth}",
+                    "labelAlignment": "Left",
+                    "advancedButton": {
+                        "subTheme": "",
+                        "buttonClass": "",
+                        "buttonClassDisabled": "",
+                        "buttonClassHover": "",
+                        "buttonClassPressed": "",
+                        "buttonInlineStyle": "",
+                        "buttonstyle": "Text only",
+                        "disabledImageName": "",
+                        "hoverImageName": "",
+                        "displayDropdownIconOnButton": false,
+                        "displayAsSplitButton": false,
+                        "showBadge": false,
+                        "badgeSettingsJSON": "",
+                        "hyperlinkClass": "[class.gridHyperlinkButton]",
+                        "hyperlinkImagePosition": "None",
+                        "hyperlinkInlineStyle": "",
+                        "imageClass": "",
+                        "imageInlineStyle": "",
+                        "imageName": "",
+                        "pressedImageName": "",
+                        "textClass": "",
+                        "textInlineStyle": "",
+                        "type": "Button"
+                    },
+                    "securityGroups": "",
+                    "showHideExpn": "",
+                    "clientSideconditionalStyle": "",
+                    "CalcExpression": "",
+                    "EnableExpression": "",
+                    "ShowExpression": "",
+                    "javascript": {
+                        "onclick": "if(tbiObj.__loginUsingCognito == 'yes') {\n\tlogoutMessage();\n} else {\n\tvar target = tbiObj.__logoutPage;\n\tif(typeof target == 'undefined') target = 'login.a5w';\n\ttarget = target + '?nologin';\n\t{tabbedUI.object}.logout(target);\n}"
+                    },
+                    "precalc": {
+                        "javascriptClientSideWatches": "",
+                        "javascriptAbstractSetupCode": "",
+                        "javascriptAdvancedButton": "",
+                        "javascriptAdvancedButton_control": "",
+                        "javascriptAdvancedButton_bind": ""
+                    },
+                    "info": {
+                        "inRepeatingSection": false
+                    },
+                    "controlContainerStyle": "",
+                    "_displayText": "[Button: Logout]"
+                }
+            },
+            {
+                "controlType": "layout_directive_FrameBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=1ea4b7a9_fe4f_41d4_be65_c889a96d4f9f}{I:'$$control.group'} [Frame: <Account Settings> - FRAME_1]",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=1ea4b7a9_fe4f_41d4_be65_c889a96d4f9f}{I:'$$control.group'} [Frame: <Account Settings> - FRAME_1]",
+                "idInternal": "1ea4b7a9_fe4f_41d4_be65_c889a96d4f9f",
+                "lastIndex": 7,
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=1ea4b7a9_fe4f_41d4_be65_c889a96d4f9f}{I:'$$control.group'} [Frame: <Account Settings> - FRAME_1]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=1ea4b7a9_fe4f_41d4_be65_c889a96d4f9f}{I:'$$control.group'} [Frame: <Account Settings> - FRAME_1]",
+                "v": {
+                    "FrameTitle": "Account Settings",
+                    "Frame": {
+                        "ID": "FRAME_1",
+                        "type": "Simple",
+                        "initialState": "Shown",
+                        "nonFloating": false,
+                        "oneFrameOpenOnly": false
+                    },
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "_displayText": "[Frame: <Account Settings> - FRAME_1]",
+                    "cssGridItemPropertiesJSON": "",
+                    "localxbasic": "",
+                    "localjavascript": ""
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\"      ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{grid.componentname}FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Account Settings</legend>"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac}{I:'$$control.html.advButton'} [Tabbed UI Button: Extended Info (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac}{I:'$$control.html.advButton'} [Tabbed UI Button: Extended Info (UX Component)] �",
+                "idInternal": "24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac",
+                "parentContainer": 3,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac}{I:'$$control.html.advButton'} [Tabbed UI Button: Extended Info (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac}{I:'$$control.html.advButton'} [Tabbed UI Button: Extended Info (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Extended Info",
+                        "actionType": "Component",
+                        "paneTitle": "Extended User Information",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "extended_user_information",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "javascript": {
+                        "onclick": "action_{alias}_24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Extended Info (UX Component)]"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Extended Info</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'extended_user_information';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_EXTENDED_U_202231ACHI';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'extended_user_information', title: 'Extended User Information',  name :'{alias}_EXTENDED_U_202231ACHI', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=01a0afee_13b3_4821_9c60_55b5c4dbea15}{I:'$$control.html.advButton'} [Tabbed UI Button: Two-factor authentication (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=01a0afee_13b3_4821_9c60_55b5c4dbea15}{I:'$$control.html.advButton'} [Tabbed UI Button: Two-factor authentication (UX Component)] �",
+                "idInternal": "01a0afee_13b3_4821_9c60_55b5c4dbea15",
+                "parentContainer": 3,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=01a0afee_13b3_4821_9c60_55b5c4dbea15}{I:'$$control.html.advButton'} [Tabbed UI Button: Two-factor authentication (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=01a0afee_13b3_4821_9c60_55b5c4dbea15}{I:'$$control.html.advButton'} [Tabbed UI Button: Two-factor authentication (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Two-factor authentication",
+                        "actionType": "Component",
+                        "paneTitle": "Two-factor Authentication",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "two_factor_authentication_preferences",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "javascript": {
+                        "onclick": "action_{alias}_01a0afee_13b3_4821_9c60_55b5c4dbea15(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Two-factor authentication (UX Component)]"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_01a0afee_13b3_4821_9c60_55b5c4dbea15(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Two-factor authentication</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_01a0afee_13b3_4821_9c60_55b5c4dbea15'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'two_factor_authentication_preferences';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_TWO_FACTOR_202231AADC';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'two_factor_authentication_preferences', title: 'Two-factor Authentication',  name :'{alias}_TWO_FACTOR_202231AADC', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=81da01f3_4f94_4e8c_96dc_eb90ba3f3454}{I:'$$control.html.advButton'} [Tabbed UI Button: Change password (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=81da01f3_4f94_4e8c_96dc_eb90ba3f3454}{I:'$$control.html.advButton'} [Tabbed UI Button: Change password (UX Component)] �",
+                "idInternal": "81da01f3_4f94_4e8c_96dc_eb90ba3f3454",
+                "parentContainer": 3,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=81da01f3_4f94_4e8c_96dc_eb90ba3f3454}{I:'$$control.html.advButton'} [Tabbed UI Button: Change password (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=81da01f3_4f94_4e8c_96dc_eb90ba3f3454}{I:'$$control.html.advButton'} [Tabbed UI Button: Change password (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Change password",
+                        "actionType": "Component",
+                        "paneTitle": "Change password",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "reset_password",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "javascript": {
+                        "onclick": "action_{alias}_81da01f3_4f94_4e8c_96dc_eb90ba3f3454(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Change password (UX Component)]"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_81da01f3_4f94_4e8c_96dc_eb90ba3f3454(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Change password</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_81da01f3_4f94_4e8c_96dc_eb90ba3f3454'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'reset_password';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_RESET_PASS_202231FFJG';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'reset_password', title: 'Change password',  name :'{alias}_RESET_PASS_202231FFJG', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "layout_directive_FrameEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=65a76756_a1de_4161_8557_9b0d38288ecb}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=65a76756_a1de_4161_8557_9b0d38288ecb}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "idInternal": "65a76756_a1de_4161_8557_9b0d38288ecb",
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=65a76756_a1de_4161_8557_9b0d38288ecb}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=65a76756_a1de_4161_8557_9b0d38288ecb}{I:'vertLineCap'} [Frame End - FRAME_1] �",
+                "v": {
+                    "Frame": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    },
+                    "_displayText": "[Frame End - FRAME_1]"
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 3
+            },
+            {
+                "controlType": "layout_directive_FrameBegin",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48}{I:'$$control.group'} [Frame: <Administrator Only> - FRAME_2]",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48}{I:'$$control.group'} [Frame: <Administrator Only> - FRAME_2]",
+                "idInternal": "fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48",
+                "lastIndex": 12,
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48}{I:'$$control.group'} [Frame: <Administrator Only> - FRAME_2]",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48}{I:'$$control.group'} [Frame: <Administrator Only> - FRAME_2]",
+                "v": {
+                    "FrameTitle": "Administrator Only",
+                    "Frame": {
+                        "ID": "FRAME_2",
+                        "type": "Simple",
+                        "initialState": "Shown",
+                        "nonFloating": false,
+                        "oneFrameOpenOnly": false
+                    },
+                    "securityGroups": "ac330ef36c3842d295d9cf4ec0bb943f,ADMINISTRATOR",
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
+                    "_displayText": "[Frame: <Administrator Only> - FRAME_2]",
+                    "cssGridItemPropertiesJSON": "",
+                    "localxbasic": "",
+                    "localjavascript": ""
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "<!--TAGSTART:fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{grid.componentname}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{grid.componentname}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Administrator Only</legend>\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=3ac0ccf3_e16b_4e92_806e_447008190789}{I:'$$control.html.advButton'} [Tabbed UI Button: Maintain Users and Groups (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=3ac0ccf3_e16b_4e92_806e_447008190789}{I:'$$control.html.advButton'} [Tabbed UI Button: Maintain Users and Groups (UX Component)] �",
+                "idInternal": "3ac0ccf3_e16b_4e92_806e_447008190789",
+                "parentContainer": 8,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=3ac0ccf3_e16b_4e92_806e_447008190789}{I:'$$control.html.advButton'} [Tabbed UI Button: Maintain Users and Groups (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=3ac0ccf3_e16b_4e92_806e_447008190789}{I:'$$control.html.advButton'} [Tabbed UI Button: Maintain Users and Groups (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Maintain Users and Groups",
+                        "actionType": "Component",
+                        "paneTitle": "Maintain Users and Groups",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Admin_MaintainUsersAndGroups",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "ac330ef36c3842d295d9cf4ec0bb943f,ADMINISTRATOR",
+                    "javascript": {
+                        "onclick": "action_{alias}_3ac0ccf3_e16b_4e92_806e_447008190789(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Maintain Users and Groups (UX Component)]"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_3ac0ccf3_e16b_4e92_806e_447008190789(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Maintain Users and Groups</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_3ac0ccf3_e16b_4e92_806e_447008190789'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Admin_MaintainUsersAndGroups';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_ADMIN_MAIN_202231GEDE';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Admin_MaintainUsersAndGroups', title: 'Maintain Users and Groups',  name :'{alias}_ADMIN_MAIN_202231GEDE', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=e9578af0_4b99_4b54_9c3c_cf61b3b23fbd}{I:'$$control.html.advButton'} [Tabbed UI Button: Active Users (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=e9578af0_4b99_4b54_9c3c_cf61b3b23fbd}{I:'$$control.html.advButton'} [Tabbed UI Button: Active Users (UX Component)] �",
+                "idInternal": "e9578af0_4b99_4b54_9c3c_cf61b3b23fbd",
+                "parentContainer": 8,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=e9578af0_4b99_4b54_9c3c_cf61b3b23fbd}{I:'$$control.html.advButton'} [Tabbed UI Button: Active Users (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=e9578af0_4b99_4b54_9c3c_cf61b3b23fbd}{I:'$$control.html.advButton'} [Tabbed UI Button: Active Users (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Active Users",
+                        "actionType": "Component",
+                        "paneTitle": "Activeusers",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "Activeusers",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "ac330ef36c3842d295d9cf4ec0bb943f,ADMINISTRATOR",
+                    "javascript": {
+                        "onclick": "action_{alias}_e9578af0_4b99_4b54_9c3c_cf61b3b23fbd(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Active Users (UX Component)]"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_e9578af0_4b99_4b54_9c3c_cf61b3b23fbd(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Active Users</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_e9578af0_4b99_4b54_9c3c_cf61b3b23fbd'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'Activeusers';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_ACTIVEUSER_202231EBBB';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'Activeusers', title: 'Activeusers',  name :'{alias}_ACTIVEUSER_202231EBBB', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "TabbedUIButton",
+                "display": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=9ca60ad4_767f_48f0_8c9e_be30cf7702f1}{I:'$$control.html.advButton'} [Tabbed UI Button: Edit data in a SQL table (UX Component)] �",
+                "displayODFlat": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=9ca60ad4_767f_48f0_8c9e_be30cf7702f1}{I:'$$control.html.advButton'} [Tabbed UI Button: Edit data in a SQL table (UX Component)] �",
+                "idInternal": "9ca60ad4_767f_48f0_8c9e_be30cf7702f1",
+                "parentContainer": 8,
+                "displayOD": "{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=9ca60ad4_767f_48f0_8c9e_be30cf7702f1}{I:'$$control.html.advButton'} [Tabbed UI Button: Edit data in a SQL table (UX Component)] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{B=White,Light Blue}{Data=9ca60ad4_767f_48f0_8c9e_be30cf7702f1}{I:'$$control.html.advButton'} [Tabbed UI Button: Edit data in a SQL table (UX Component)] �",
+                "v": {
+                    "tabbedUI": {
+                        "buttonType": "Button",
+                        "buttonText": "Edit data in a SQL table",
+                        "actionType": "Component",
+                        "paneTitle": "Data Editor",
+                        "canClosePane": true,
+                        "treeControl": {
+                            "controlNesting": "SameLevelAsPrevious",
+                            "outdentLevel": 1,
+                            "treeControlIndentLevel": -1,
+                            "icon": "<Auto>"
+                        },
+                        "header": {
+                            "className": "<Default>",
+                            "style": {
+                                "borderTopStyle": "none",
+                                "borderBottomStyle": "solid",
+                                "borderBottomColor": "#ddd",
+                                "borderBottomWidth": "1px",
+                                "padding": "0px"
+                            },
+                            "show": true,
+                            "canHide": true
+                        },
+                        "grid": {
+                            "gridName": "GenericSQLDataEditor",
+                            "componentType": "UX",
+                            "alias": "<DefaultAlias>",
+                            "useMasterStyle": true,
+                            "workingMessage": "<img src=\"css/A5System/Images/wait.gif\" /> Working...",
+                            "useStaticHTML": false
+                        },
+                        "report": {
+                            "workingMessage": "Working...",
+                            "printReportButtonLabel": "Print Report",
+                            "moreRecordsTemplate": "<hr />Showing first [DisplayRecords] of [TotalRecords] records in query",
+                            "moreRecordsStyle": "text-align: center;",
+                            "initialView": "PDF",
+                            "HTMLToolbar": {
+                                "buttons": {
+                                    "pdf": true,
+                                    "excel": true,
+                                    "printHTML": true,
+                                    "word": true,
+                                    "pdfButton": {
+                                        "text": "PDF",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.adobe.pdf.png.a5image",
+                                        "bubbleHelp": "Print report as a PDF document."
+                                    },
+                                    "excelButton": {
+                                        "text": "Excel",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.excel.png.a5image",
+                                        "bubbleHelp": "Export report to Excel."
+                                    },
+                                    "printHTMLButton": {
+                                        "text": "Print HTML",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$device.printer.png.a5image",
+                                        "bubbleHelp": "Print the HTML report."
+                                    },
+                                    "WordButton": {
+                                        "text": "Word",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$application.ms.word.png.a5image",
+                                        "bubbleHelp": "Export report to Word."
+                                    },
+                                    "textButton": {
+                                        "text": "Text",
+                                        "buttonType": "Image followed by text",
+                                        "imageName": "images/$$control.text.png.a5image",
+                                        "bubbleHelp": "Export data in report to a text file."
+                                    },
+                                    "bookmarksButton": {
+                                        "buttonType": "Text",
+                                        "text": "Bookmarks",
+                                        "imageName": "images/$$generic.book.png.a5image"
+                                    }
+                                },
+                                "bookMarkPanelSize": "3in"
+                            }
+                        },
+                        "tab": {
+                            "className": "",
+                            "selectedClassName": "",
+                            "canBeFav": true
+                        },
+                        "keyboardshortcutkey": ""
+                    },
+                    "class": "<Default>",
+                    "style": "width:1.5in;",
+                    "BreakType": "After",
+                    "breakHeight": ".1in",
+                    "breakHorizontalSpace": ".1in",
+                    "securityGroups": "ac330ef36c3842d295d9cf4ec0bb943f,ADMINISTRATOR",
+                    "javascript": {
+                        "onclick": "action_{alias}_9ca60ad4_767f_48f0_8c9e_be30cf7702f1(); return false;"
+                    },
+                    "sencha": {
+                        "animation": {
+                            "type": "slide",
+                            "duration": 500
+                        }
+                    },
+                    "localxbasic": "",
+                    "localjavascript": "",
+                    "pageLayoutPart": {
+                        "grid": {
+                            "onLoadCompleteJavascript": ""
+                        },
+                        "inPanelCard": {
+                            "delayRenderTillVisible": false
+                        }
+                    },
+                    "_displayText": "[Tabbed UI Button: Edit data in a SQL table (UX Component)]"
+                },
+                "indentTree": 1,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_9ca60ad4_767f_48f0_8c9e_be30cf7702f1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Edit data in a SQL table</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n\t",
+                    "tabbedUIButtonJavascript": "window['action_{alias}_9ca60ad4_767f_48f0_8c9e_be30cf7702f1'] = function(obj) {\n\t\n\t\n\n\n\tvar go = {};\n\t\n\n\tvar flagOKToRender = true;\n\t\n\t\n\tvar onCompleteCode = '';\n\tvar callbackId = A5.UUID();\n\tvar objx = tbiObj._ajaxCallbackCompleteCode;\n\tif(typeof objx == 'undefined') objx = {};\n\tobjx[callbackId] = Function(onCompleteCode);\n\tvar go = new Object();\n\t\tgo.dialog2Name = 'GenericSQLDataEditor';\n\tgo.type = 'dialog2';\n\t\n\tgo.alias = '{alias}_GENERICSQL_202232FEGG';\n\tgo.workingMessage = '<img src=\"css/A5System/Images/wait.gif\" /> Working...';\n\tgo.flagTimer = 'F';\n\tgo.flagQueryEcho = 'F';\n\tgo.flagDebugMode = 'F';\n\tgo.userFilter = '';\n\tgo.baseFilter = '';\n\tgo.userOrder = '';\n\tgo.overrideSettings = 'style_name=`{tabbedUI.style}`'+'||';\n\tgo.arguments = '';\n\t\n\t\n\t\n\tgo.localArguments = '';\n\tgo.linkDefinition = '';\n\tgo.placeHolderValues = '';\n\tgo.parameterBucket = $gvs('{alias}.PARAMETERBUCKET');\n\tgo.argumentValueBucket = $gvs('{alias}.ARGUMENTVALUES');\n\tgo.a5_default_path = '{tabbedUI.a5_default_path}';\n\tgo.onLoadCompleteJavascript = 'run:'+callbackId;\n\t\n\tgo._runningInMobilePreview = tbiObj._mobilePreview;\n\t\n\tif(typeof tbiObj != 'undefined' && typeof tbiObj._workingPreviewHost != 'undefined') { \n\t\tgo._workingPreviewHost = tbiObj._workingPreviewHost;\n\t}\n\t\n\tif(typeof obj != 'undefined') { \n\t\tfor(var n in obj) { \n\t\t\tgo[n] = obj[n]\n\t\t}\n\t}\n\t\n\t\n\n\n\t\n\tvar flag = true; if(typeof flagOKToRender != 'undefined') flag = flagOKToRender;  flag = true;  if(flag) { {tabbedUI.alias}Obj.add({objectName: 'GenericSQLDataEditor', title: 'Data Editor',  name :'{alias}_GENERICSQL_202232FEGG', type:'dialog2', data: go , autoRefresh: false   }); }\n\t\n}\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "inPanelCard": false,
+                "inTreeControl": false
+            },
+            {
+                "controlType": "layout_directive_FrameEnd",
+                "display": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a577d56f_7b6d_4e05_9a96_577e4319073c}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "displayODFlat": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a577d56f_7b6d_4e05_9a96_577e4319073c}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "idInternal": "a577d56f_7b6d_4e05_9a96_577e4319073c",
+                "parentContainer": -1,
+                "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a577d56f_7b6d_4e05_9a96_577e4319073c}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "repeatingSectionParentId": -1,
+                "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{Data=a577d56f_7b6d_4e05_9a96_577e4319073c}{I:'vertLineCap'} [Frame End - FRAME_2] �",
+                "v": {
+                    "Frame": {
+                        "BreakType": "After",
+                        "BreakHeight": ".1in",
+                        "breakHorizontalSpace": ".1in"
+                    },
+                    "_displayText": "[Frame End - FRAME_2]"
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGEND:a577d56f_7b6d_4e05_9a96_577e4319073c-->\n"
+                },
+                "isCollapsed": false,
+                "parentIsCollapsed": false,
+                "containerStartIndex": 8
+            }
+        ],
+        "builderType": "TabbedUI",
+        "guid": "5c15f47f-239c-4c26-acc9-37ed3b704f6f",
+        "componentName": "masterTabbedUI",
+        "componentFilename": "C:\\BeautyProRewards\\BPR\\BPR.WebProjects\\Default.WebProject\\masterTabbedUI.a5wcmp",
+        "_style_versionNumber": 4,
+        "_style_hasSassOverrides": false,
+        "_style_hasCSSTweaks": false,
+        "_style_hasCSS_or_subtheme_tweaks": false,
+        "useCompactTheme": true,
+        "SVGLinkedFiles": "",
+        "localsvg": "",
+        "saveFileType": "Formatted JSON",
+        "keyboardShortcutsJSON": "",
+        "selected": "497d75b3_a25b_4b3e_8ea5_62dde20db883\n",
+        "designPaneIndex": 1,
+        "masterPaneC": "controls",
+        "serverSideEventIndex": 1,
+        "clientSideEventIndex": 1,
+        "clientSideEventIndexC": "1",
+        "__WPhostName": "Chrome",
+        "embeddedMode": false,
+        "_style_hassubthemeTweaks": false,
+        "repeatingSectionsAreDirty": true,
+        "flagDropdownCascadingChanged": false,
+        "toolBox_value": "tabbedUIButton_GridComponent",
+        "addinBuildNumber": "5713",
+        "addinBuildNumberHighestUsed": "5713",
+        "alphaFiveBuildNumber": "12",
+        "openedFromTemplate": false,
+        "builtWithVersionNumer": 1,
+        "_buildCount": "65",
+        "securityEnabled": true,
+        "showHideIsUsed": false,
+        "precalc": {
+            "usesSystemSVG": true,
+            "buttonPanel": {
+                "HTML": "<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width: 1.5in; text-align: left;\" title=\"\"  onclick=\"action_{alias}_4680a401_3140_4acf_be97_3622d2350929(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Adress Hierachy</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" id=\"BUTTON_1\" class=\"[class.dialogButton]\" style=\"\" title=\"\"  onclick=\"if(tbiObj.__loginUsingCognito == 'yes') { \tlogoutMessage(); } else { \tvar target = tbiObj.__logoutPage; \tif(typeof target == 'undefined') target = 'login.a5w'; \ttarget = target + '?nologin'; \t{tabbedUI.object}.logout(target); }\"  >Logout</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_1'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_1\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Account Settings</legend>\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_24d5cdc6_70d6_498f_9e3a_5d5450eeb0ac(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Extended Info</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_01a0afee_13b3_4821_9c60_55b5c4dbea15(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Two-factor authentication</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_81da01f3_4f94_4e8c_96dc_eb90ba3f3454(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Change password</button>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGSTART:fd4c4230_6c8f_48fa_bcde_d16ddcbb4a48-->\n<div class=\"A5container\"      ><!-- DIV Container for fieldset '{tabbedUI.alias}.FRAME_2'-->\n\t<div>\n\t<fieldset id=\"{tabbedUI.alias}FRAME_2\" a5-containertype=\"framesimple\" class=\"\" style=\"-moz-border-radius: 8px;display:inline; \" >\n\t<legend class=\"\" style=\"\"  >Administrator Only</legend>\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_3ac0ccf3_e16b_4e92_806e_447008190789(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Maintain Users and Groups</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_e9578af0_4b99_4b54_9c3c_cf61b3b23fbd(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Active Users</button>\n</div><!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<div class=\"A5container\">\n\t<button type=\"button\" class=\"[class.dialogButton]\" style=\"width:1.5in;\" title=\"\"  onclick=\"action_{alias}_9ca60ad4_767f_48f0_8c9e_be30cf7702f1(); return false;\" onmousedown=\"A5._btn(this,'onmousedown','{grid.style}'); $e.preventDefault(event);\" onmouseup=\"A5._btn(this,'onmouseup','{grid.style}');\" onmouseover=\"A5._btn(this,'onmouseover','{grid.style}');\" onmouseout=\"A5._btn(this,'onmouseout','{grid.style}');\"  >Edit data in a SQL table</button>\n</div>\n</fieldset>\n</div><!--End DIV Container for fieldset -->\n</div>\n<!--breakbegin--><br  style=\"clear:both; \" /><div  style=\"height:.1in; font: 0pt;\"></div><!--breakend-->\n<!--TAGEND:a577d56f_7b6d_4e05_9a96_577e4319073c-->",
+                "JS": ""
+            },
+            "treeControlJS": "",
+            "expandingMenuJS": "",
+            "hompePageJavascript": "var homePageHTML = '__homePageHtml__';\ntbiObj.add({title: '{tabbedUI.homePageTitle}', type: 'static', html: homePageHTML , close: false});\n",
+            "PageSetupJavascript": "\nvar tbiObj = new A5.TabbedInterfaceComponentHelper('{tabbedUI.alias}',__tabSettings__);\ntbiObj._functions = {};\ntbiObj._buttons = [];\nvar homePageHTML = '__homePageHtml__';\ntbiObj.add({title: '{tabbedUI.homePageTitle}', type: 'static', html: homePageHTML , close: false});\n\n\n\n\ntbiObj.logout = function(redirectTo) { tbiObj.ajaxCallback('system:logout','__targetPage=' + redirectTo) }\ntbiObj.showTabbedUIMenuPanel = function(flag) { \n\tvar resizePanels = function() { \n\t\tvar arr = tbiObj._tbObj._panes;\n\t\tfor(var i = 0; i < arr.length; i++) {\n\t\t\tvar id = arr[i]._id;\n\t\t\t$e.execute(id + '.PANE','a5resize');\n\t\t};\n\t}\n\n\n\n\tif(typeof flag == 'undefined') flag = true;\n\tif(typeof jQuery != 'undefined' && flag) {\n\t\tvar ele = $('tbi.MENUPANEL');\n\t\tele.style.display = '';\n\t\t$('tbi.EXPANDBAR').style.display = 'none';\n\t\tjQuery(ele).animate({width:$ga(ele,'A5OLDWIDTH') }, tbiObj._showAnimationSpeed,function() { resizePanels()});\n\t\ttbiObj.refreshLayout();\n\t} else {\n\t\t$('tbi.MENUPANEL').style.display=''; $('tbi.EXPANDBAR').style.display = 'none'; tbiObj.refreshLayout(); resizePanels();\n\t}\n\n\t}\ntbiObj.hideTabbedUIMenuPanel = function(flag) { \n\tvar resizePanels = function() { \n\t\tvar arr = tbiObj._tbObj._panes;\n\t\tfor(var i = 0; i < arr.length; i++) {\n\t\t\tvar id = arr[i]._id;\n\t\t\t$e.execute(id + '.PANE','a5resize');\n\t\t};\n\t}\n\n\tif(typeof flag == 'undefined') flag = true;\n\tif(typeof arguments[1] != 'undefined') flagShowExpandBar = arguments[1] ;\n\telse flagShowExpandBar = true;\n\tvar ele = $('tbi.MENUPANEL');\n\tif($ga(ele,'A5OLDWIDTH') == '' || $ga(ele,'A5OLDWIDTH') == null) $sa(ele,'A5OLDWIDTH',ele.style.width);\n\tif(typeof jQuery != 'undefined' && flag) {\n\t\tjQuery(ele).animate({width:22}, tbiObj._hideAnimationSpeed,'',function() {\n\t\t    var mele = $('tbi.MENUPANEL');\n\t\t    mele.style.display='none';\n\n\t\t    if(flagShowExpandBar) $('tbi.EXPANDBAR').style.display = '';\n\t\t    resizePanels();\n\t\t});\n\n\t} else {\n\t\t$('tbi.MENUPANEL').style.display='none';\n\t\tif(flagShowExpandBar) $('tbi.EXPANDBAR').style.display = '';\n\t\tresizePanels();\n\t}\n\n\n\t}\n\n\ntbiObj._defaultWindowSettings = new Object();\ntbiObj._defaultWindowSettings['dropdown'] = {\n\ttype: 'popup',\n\ttheme: this.styleName,\n\ttitle: {html: 'Null',show: false},\n\tbody:  {content: {type: 'blank'}}\n};\n\n\ntbiObj._defaultWindowSettings['modal'] = {\n\ttype: 'modal', autoPosition: 'in-view',\n\ttheme: this.styleName,\n\ttitle: {html: 'Customer Grid',\n\t\ttools: {items: [{action: 'close',name: 'Close',image: 'images/$$window.button.close.png.a5image'}],\n\t\t\tdummy: false\n\t\t}},\n\tbody: {content: {type: 'blank'}}\n};\n\ntbiObj._defaultWindowSettings['modeless'] = {\n\ttype: 'modeless', autoPosition: 'in-view',\n\ttheme: this.styleName,\n\ttitle: {html: 'Customer Grid',\n\t\ttools: {items: [{action: 'close',name: 'Close',image: 'images/$$window.button.close.png.a5image'}],\n\t\t\tdummy: false\n\t\t}},\n\tbody: {content: {type: 'blank'}}\n};\n\ntbiObj._genericWindow = new Object();\n\n\ntbiObj.getCurrentPaneIndex = function() {\n\treturn tbiObj._tbObj._curTabIndx;\n}\n\ntbiObj.getCurrentPaneName = function() {\n\treturn tbiObj._tbObj._items[tbiObj._tbObj._curTabIndx].name;\n}\n\ntbiObj.getCurrentPaneLabel = function() {\n\treturn tbiObj._tbObj._items[tbiObj._tbObj._curTabIndx].html;\n}\n\n\ntbiObj.selectPaneByIndex = function(index) {\n\ttbiObj._tbObj.select(index);\n}\n\n\ntbiObj.createWindow =  function(name,settings) {\n\tif(!this.getWindow(name)) {\n\t\tif(typeof settings == 'string') {\n\t\t\tvar parts = settings.split('-');\n\t\t\tsettings = new Object();\n\t\t\t$u.o.assign(settings , this._defaultWindowSettings[parts.shift()]);\n\t\t\tfor(var i=0;i<parts.length;i++){\n\t\t\t\tif(parts[i] == 'url'){\n\t\t\t\t\tsettings.body.content.type = 'url';\n\t\t\t\t\tsettings.body.content.url = 'about:blank';\n\t\t\t\t} else if(parts[i] == 'resizable'){\n\t\t\t\t\tsettings.resize = 'both';\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t\tif(typeof arguments[2] == 'object') $u.o.assign(settings,arguments[2]);\n\t\tthis._genericWindow[name] = new A5.Window(settings);\n\t}\n\treturn this._genericWindow[name];\n}\n\ntbiObj.getWindow =  function(name) {\n\tif(typeof this._genericWindow[name] != 'undefined' ) return this._genericWindow[name];\n\treturn false;\n}\n\ntbiObj._toggleEditControlSecurityGroupsMode = function() { \n\tvar eles = document.getElementsByClassName('editsecuritybutton');\n\tfor(var i = 0; i < eles.length; i++) { \n\t\tif(eles[i].style.display == 'none') eles[i].style.display = '';\n\t\telse eles[i].style.display = 'none';\n\t}\n}\n\ntbiObj._setControlSecurityGroups = function(componentGUID,controlID) { \n\tvar data = '__componentGUID=' + componentGUID + '&__controlID=' + controlID\n\ttbiObj.ajaxCallback('system:_editcontrolsecuritygroups',data)\n\t//alert('component guid: ' + componentGUID + ' control id: ' + controlID);\n}\n\ntbiObj.ajaxCallback = function(xbasicFunction,data) {\n\tvar callbackURL = tbiObj.ajaxURL;\n\tvar data2 = '_callbackType=genericAjaxCallback&_xbasicFunction=' + xbasicFunction + '&' + data;\n\tA5.ajax.callback(callbackURL,data2);\n}\n\ntbiObj._timeToSessionTimeout = function(units) {\n\tif(isNaN($a.lastCallback)) return 9999999999999999;\n\tvar t = (Date.now() - $a.lastCallback);\n\tvar tte = (tbiObj._sessionTimeoutInMSeconds - t);\n\tif(units == 's') return (tte/1000);\n\tif(units == 'm') return (tte/60000);\n\tif(units == 'ms') return (tte);\n\treturn tte\n}\n\n\n\n\n\ntbiObj._executeEvent = function(eventName) {\n\tvar result = true;\n\tvar targs = new Array();\n\tfor(var i = 1; i < arguments.length; i++) targs.push(arguments[i]);\n\tvar tresult = false;\n\tif(typeof this[eventName] != 'undefined'  ) {\n\n\t\tif(this[eventName].constructor == Function) {\n\t\t\ttresult = this[eventName].apply(this,targs);\n\t\t\tif(typeof tresult == 'boolean') result = tresult;\n\t\t}\n\t}\n\tif(typeof this['_' +eventName] != 'undefined' ) {\n\t\tif(this['_'+eventName].constructor == Function) {\n\t\t\ttresult = this['_'+eventName].apply(this,targs);\n\t\t\tif(typeof tresult == 'boolean') result = result && tresult;\n\t\t}\n\n\t}\n\treturn result;\n}\n\n\n\nA5.loadJavascriptFile =  function(filename) {\n\n\tvar onLoaded = typeof arguments[1] != 'undefined' ? arguments[1] : false;\n\tif(typeof onLoaded == 'string') {\n\t\tif(onLoaded.indexOf('.') == -1) {\n\t\t\tonLoaded = window[onLoaded];\n\t\t} else {\n\t\t\tvar fName = onLoaded.split('.')[onLoaded.split('.').length-1];\n\t\t\tvar objName = onLoaded.split('.' + fName)[0];\n\t\t\tvar str = objName + '[fName]';\n\t\t\tvar onLoaded = eval(str);\n\t\t}\n\t}\n\tvar sEle = document.getElementsByTagName('script');\n\tvar cancelAdd = false;\n\tfor(var i=0; i < sEle.length; i++) {\n\t\tif(sEle[i].src == filename) {\n\t\t\tcancelAdd = true;\n\t\t\tbreak;\n\t\t}\n\t}\n\n\n\tif(typeof cordova != 'undefined') cancelAdd = false;\n\tif(cancelAdd) {\n\n\t\tif(onLoaded.constructor == Function) onLoaded();\n\t\tif(onLoaded.constructor == String) {\n\t\t\t//ux passed in the onLoaded function as a string\n\t\t\tsetTimeout(function() { if(window[onLoaded]) window[onLoaded]();},100); //give function time to load in case it is a global function\n\t\t}\n\t}\n\n\tif(cancelAdd == false) {\n\t\tvar e = document.createElement('script');\n\t\te.src = filename;\n\t\te.onload = function() {\n\n\t\t\tif(typeof jQuery != 'undefined') jQuery.noConflict();\n\t\t\tif(onLoaded.constructor == Function) onLoaded();\n\t\t\tif(onLoaded.constructor == String) {\n\t\t\t\t//ux passed in the onLoaded function as a string\n\t\t\t\tsetTimeout(function() { if(window[onLoaded]) window[onLoaded]();},100); //give function time to load in case it is a global function\n\t\t\t}\n\t\t};\n\t\te.onreadystatechange = function() {\n\t\t\tif(this.readyState == 'complete' || this.readyState == 'loaded') {\n\t\t\t\tif(typeof jQuery != 'undefined') jQuery.noConflict();\n\t\t\t\tif(onLoaded.constructor == Function) onLoaded();\n\t\t\t\tif(onLoaded.constructor == String) {\n\t\t\t\t\t//ux passed in the onLoaded function as a string\n\t\t\t\t\tsetTimeout(function() { if(window[onLoaded]) window[onLoaded]();},100);\n\t\t\t\t}\n\t\t\t}\n\t\t};\n\t\tdocument.getElementsByTagName('head')[0].appendChild(e);\n\t}\n}\n\n\ntbiObj.loadJavascriptFile = function(filename) { \n\tA5.loadJavascriptFile(filename,arguments[1])\n}\n\n\n\ntbiObj._hideAnimationSpeed = 600;\ntbiObj._showAnimationSpeed = 600;;\n;\n;\n\nA5.msgBox.theme = '{grid.style}';;\n//systemOnRenderComplete\ntbiObj._executeEvent('onRenderComplete',{});",
+            "TabbedUIMasterTemplate": "<iframe style=\"display:none;\" id=\"TBIOBJ.__IFRAME1\"></iframe>\n<input type=\"hidden\" value=\"{parameterBucket}\" id=\"{alias}.PARAMETERBUCKET\"/>\n<input type=\"hidden\" value=\"{savedArgValues}\" id=\"{alias}.ARGUMENTVALUES\"/>\n\n\n<div class=\"[theme:tabbedUI.base.headerClassName]\" style=\"overflow:hidden;\">\n{tabbedUI.header}\n</div>\n<table\n\tid=\"{tabbedUI.alias}\"\n\tclass=\"[class.tabbedUI]\"\n\tcellpadding=\"0\"\n\tcellspacing=\"0\"\n\tstyle=\"table-layout: fixed; width: 100%; border-left: none; border-right: none;\">\n\t<tr>\n\t\t<td \tid=\"{tabbedUI.alias}.EXPANDBAR\"\n\t\t\t\tclass=\"[theme:tabbedUI.base.menu.left.collapsedClassName|class.tabbedUIMenuCollapsed] \"\n\t\t\t\tstyle=\"display:none; width: [theme:tabbedUI.base.menu.left.collapsedSize|'20px'];\"\n\t\t\t\tvalign=\"top\"\n\t\t\t\tonclick=\"tbiObj.showTabbedUIMenuPanel();\"\n\t\t\t\t>\n\t\t\t\t<img id=\"{tabbedUI.alias}.EXPANDBAR_IMAGE\" src=\"***leftExpand***\" style=\"cursor:pointer;\"/>\n\n\t\t</td>\n\t\t<td \tid=\"{tabbedUI.alias}.MENUPANEL\"\n\t\t\t\tclass=\"[theme:tabbedUI.base.menu.left.className|class.tabbedUIMenuPanel] \"\n\t\t\t\tstyle=\"{tabbedUI.buttonsPaneStyle}; ;\"\n\t\t\t\tvAlign=\"top\"><!--TD for the Buttons Pane (which contains the action buttons)-->\n\t\t\t<div id=\"{tabbedUI.alias}.MENUPANEL_HEADER\" class=\"[theme:tabbedUI.base.menu.left.headerClassName|class.TabbedUIMenuPanelHeader] \" style=\"\">\n\t\t\t\t<table cellspacing=\"0\" cellpadding=\"0\">\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td\t\tid=\"{tabbedUI.alias}.MENUPANEL_EMPTYCELL\"\n\t\t\t\t\t\t\t\tstyle=\"width: 100%;\">\n\t\t\t\t\t\t&nbsp;\n\t\t\t\t\t\t</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<img src=\"***leftCollapse***\" id=\"{tabbedUI.alias}.MENUPANEL_IMAGE\" style=\"cursor:pointer;\" onclick=\"tbiObj.hideTabbedUIMenuPanel()\" />\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t\t<div \tid=\"{tabbedUI.alias}.MENU\"\n\t\t\t\t\tclass=\"\"\n\t\t\t\t\tstyle=\"{tabbedUI.buttonsPadding}\">\n\t\t\t\t\t\n\n\n\t\t\t\t{tabbedUI.buttonsPane}\n\t\t\t</div>\n\t\t</td><!--End TD for Buttons Pane-->\n\t\t<td id=\"{tabbedUI.alias}.DIVIDER\" class=\"[theme:tabbedUI.base.menu.left.separatorClassName|class.tabbedUIDivider]\" style=\"width: 4px; font: 0pt Arial;padding: 0px;\">\n\t\t\t&nbsp;\n\t\t</td>\n\t\t<td \tclass=\"[theme:tabbedUI.base.bodyClassName|class.tabbedUIPanel]\"\n\t\t\t\tid=\"{tabbedUI.alias}.CONTENTPANEL\"\n\t\t\t\tvAlign=\"top\"\n\t\t\t\tstyle=\"padding: 0px; \">\n\t\t\t<div \tid=\"{tabbedUI.alias}.TABBAND\"\n\t\t\t\t\tstyle=\"border-top: none; border-left: none; border-right: none;\">\n\t\t\t</div>\n\t\t\t<div id=\"{tabbedUI.alias}.PANES\" style=\"position:relative;\">\n\t\t\t</div>\n\t\t</td>\n\t</tr>\n</table>\n<div class=\"[theme:tabbedUI.base.footerClassName]\" style=\"overflow:hidden;\">\n{tabbedUI.footer}\n</div>\n"
+        },
+        "componentType": "TabbedUI",
+        "version": 1,
+        "alias": "tbi",
+        "flagForcerecalc": false,
+        "linkedResources": "",
+        "A5SaveTimeStamp": "20241015104508358",
+        "forceChromeControl": true,
+        "flagOptimizedUXTree": false,
+        "flagReanalyzeContainers": false,
+        "minimumBuildNumber": "",
+        "_display": "",
+        "style_color_palette": "",
+        "showPulseEffect": true,
+        "flagShowDeleteConfirmation": true,
+        "allowusertoswitchstylesatruntime": false,
+        "listofstyles": "",
+        "baseURLForStyles": "",
+        "templateforstyleselector": "<table><tr><td style=\"white-space:nowrap;\">Component style:</td><td>{selector}</td></tr></table>",
+        "compressUX": false,
+        "pusherConfigJSON": "",
+        "pusherApp": false,
+        "__LPhostName": "Chrome",
+        "_style_isInherited": true,
+        "livePreview_permissions_friendly": "Administrators\n",
+        "cachecomponent": false,
+        "_treeErrors": "",
+        "_flagDoTreeview": true,
+        "_move": {
+            "index": 1,
+            "targetIndex": 2,
+            "count": 1
+        },
+        "_flagForceRecalcChildren": true,
+        "Livepreview_permissions": "3e9d85fc779f44649c8142b37a23d47a",
+        "storeSecurityGroupsInDatabase": false,
+        "useCompactOnWhichParts": "EntireComponent",
+        "headerHTML": "<h1>Enter Your Header Text Here</h1>",
+        "footerHTML": "Enter Your Footer Text Here",
+        "buttonPanel": {
+            "Location": "Left",
+            "Style": "width: 2.5in;",
+            "paddingLeft": ".25in",
+            "paddingRight": "",
+            "paddingTop": ".25in",
+            "setPaddingOffIfHasTree": true
+        },
+        "cssTabbedUICustomizeCSSJSON": "",
+        "homePage": {
+            "TabTitle": "Home",
+            "HTML": "Specify the HTML for the Home page.",
+            "source": "Local",
+            "autoRefresh": false,
+            "URL": ""
+        },
+        "ContainerA5WPageName": "<Default>",
+        "NavigateAwayMessageDirty": "{pane.title} contains unsaved data.",
+        "NavigateAwayMessageClean": "",
+        "promptWhenUserNavigatesFromTabbedUIPage": true,
+        "canCollapseButtonPane": true,
+        "buttonPaneInitialState": "Open",
+        "nocriptContent": "",
+        "experimentalMode": false,
+        "cache": {
+            "invalidateStrategy": "RevisionNumber",
+            "MaxAge": 60,
+            "key": "SecurityGroups"
+        },
+        "closeTabImage": "<Default>",
+        "closeTabHoverImage": "<Default>",
+        "scrollTabsPrevImage": "<Default>",
+        "scrollTabsPrevDisabledImage": "<Default>",
+        "scrollTabsNextImage": "<Default>",
+        "scrollTabsNextDisabledImage": "<Default>",
+        "collapseButtonPanelLeft": "<Specified by Style>",
+        "collapseButtonPanelRight": "<Specified by Style>",
+        "expandButtonPanelLeft": "<Specified by Style>",
+        "expandButtonPanelRight": "<Specified by Style>",
+        "classNameTabBand": "<Default>",
+        "classNameTabBandSeparator": "<Default>",
+        "classNameTabOff": "<Default>",
+        "classNameTabOn": "<Default>",
+        "classNameTabDisabled": "<Default>",
+        "classNameTabBandLeftScroll": "<Default>",
+        "classNameTabBandRightScroll": "<Default>",
+        "classNameTabBandLeftScrollDisabled": "<Default>",
+        "classNameTabBandRightScrollDisabled": "<Default>",
+        "userDefinedHeadContent": "",
+        "noscriptcontent": "",
+        "JavascriptToRunOnStartup": "",
+        "MasterTemplate": "",
+        "tabRightClickMenu": "",
+        "enableFavorites": false,
+        "favoritesLabel": "Favorites",
+        "favoriteIconOn": "svgIcon=#alpha-icon-starSolid:icon,24",
+        "favoriteIconOff": "svgIcon=#alpha-icon-star:icon,24",
+        "favoriteIconColor": "#000",
+        "favoritesContainerStyle": "",
+        "favoritesShowInMenuBar": false,
+        "favoritesMenuBarId": "",
+        "favoritesInitialState": "Open",
+        "favoritesBubbleHelpToggle": "Toggle favorite",
+        "favoritesBubbleHelpTurnOff": "Un-set as favorite",
+        "favoritesMenuBarStyle": "Dropdown",
+        "favoritesShowUnsetIconInFavorite": true,
+        "componentWidth": "800px",
+        "componentBorderClassName": "{tabbedUI.style}Edit",
+        "componentBorderInlineStyle": "padding: 0px;",
+        "animateShowHideButtons": true,
+        "animate": {
+            "Hide": {
+                "speed": "Slow"
+            },
+            "Show": {
+                "speed": "Slow"
+            }
+        },
+        "hideTabbedUIElements": false,
+        "layout": {
+            "hideTabButtons": false,
+            "layoutMode": "DesktopBrowser",
+            "MobileModeMenuButtonText": "Menu",
+            "mobileDisplayHomePage": false,
+            "MobileMenuTitle": "Menu"
+        },
+        "hasSearchFeature": true,
+        "searchLabel": "Search",
+        "searchFieldWatermark": "Enter search string",
+        "searchResultsClass": "",
+        "searchPartClass": "",
+        "searchInputClass": "",
+        "nosearchResults": "No results found",
+        "searchResultsButtonClass": "",
+        "searchResultsButtonStyle": "",
+        "autoexecuteactionifsearchresulthassinglematch": false,
+        "enableEnterKeyToPerformAction": true,
+        "hasSmartSearch": false,
+        "smartSearchDefinitionJSON": "",
+        "minimumHeight": 0,
+        "defaultView": "DesktopBrowser",
+        "autoHideButtonPanel": false,
+        "autoHideDelay": 500,
+        "hideButtonPanePermanenly": false,
+        "storeSecurityGroupsInDatabase_buttonBubbleHelp": "Edit security groups",
+        "storeSecurityGroupsInDatabase_buttonText": "{icon}",
+        "legacyThemeJS": "A5.themes.add('{tabbedUI.style}',{\n\ttabBand: {\n\t\tbase: {\n\t\t\tclassName: '{grid.style}FormTABLE {grid.style}ColumnTD A5TabBand',\n\t\t\tseparator:{\n\t\t\t\tclassName: '{grid.style}DataTD A5TabBandSeparator'\n\t\t\t},\n\t\t\ttab: {\n\t\t\t\tclassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabOff',\n\t\t\t\tselectedClassName: '{grid.style}FormTABLE {grid.style}DataTD A5TabBandTabOn',\n\t\t\t\tdisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD A5TabBandTabDisabled',\n\t\t\t\tcloseIcon: 'css/A5System/Images/tabclose.png',\n\t\t\t\tcloseIconHover: 'css/A5System/Images/tabcloseHover.png'\n\t\t\t},\n\t\t\tscrollButtons: {\n\t\t\t\tprevClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandLeftScroll',\n\t\t\t\tprevImage: 'css/{grid.style}/PrevOn.png',\n\t\t\t\tprevDisabledImage: 'css/{grid.style}/PrevOff.png',\n\t\t\t\tnextClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextDisabledClassName: '{grid.style}FormTABLE {grid.style}AltDataTD  A5TabBandRightScroll',\n\t\t\t\tnextImage: 'css/{grid.style}/NextOn.png',\n\t\t\t\tnextDisabledImage: 'css/{grid.style}/NextOff.png'\n\t\t\t}\n\t\t}\n\t}\n});\n"
+    }
+}

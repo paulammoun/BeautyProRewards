@@ -1,0 +1,303 @@
+{
+	"page": [
+	{
+		"page": "login.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "index.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "TabbedUI_Menu.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "css/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "css/Alpha-Dark/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Salons.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "ppp.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Admin_MaintainUsersAndGroups.a5wcmp",
+		"action": "login",
+		"groups": "ac330ef36c3842d295d9cf4ec0bb943f,ADMINISTRATOR"
+	},
+	{
+		"page": "GenericSQLDataEditor.a5wcmp",
+		"action": "login",
+		"groups": "ac330ef36c3842d295d9cf4ec0bb943f,ADMINISTRATOR"
+	},
+	{
+		"page": "*.js",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.css",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.bmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.jpg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.jpeg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.gif",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.ico",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.png",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.a5image",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.woff",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.ttf",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "*.svg",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "login.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "masterTabbedUI.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "TabbedUI_masterTabbedUI.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "two_factor_authentication_preferences.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "extended_user_information.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "reset_password.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Activeusers.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "insufficientPermission.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Countries_ux.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "menu_ux.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "menu.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "Gifts.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "HairdressersPoints.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa.a5w",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "test.a5wcmp",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/index.html",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/sw.js",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/manifest.json",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/svg/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/javascript/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/default/tree/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/default/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/GenericStyles/Default/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/GenericStyles/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/Images/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/reportStyles/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/Vista/tree/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/Vista/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/A5System/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/Alpha/icons/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/Alpha/tweaks/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/Alpha/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/css/_sharedStyles/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/icons/*.*",
+		"action": "allow",
+		"groups": ""
+	},
+	{
+		"page": "pwa/pwa/a5images/*.*",
+		"action": "allow",
+		"groups": ""
+	}]
+}

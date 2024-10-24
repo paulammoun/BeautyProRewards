@@ -1,0 +1,115 @@
+
+
+
+function LoginonDialogInitialize as v (e as p)
+	
+if eval_valid("request.variables.mode") then 
+	session.___loginwithgoogle = ""
+	
+end if 
+
+if eval_valid("request.variables.nologin") then 
+	A5WS_LogoutUser()
+	session.___loginwithgoogle = ""
+	
+	dim js_firestorelogout as c = <<%str%
+	
+var fs = {Dialog.object}.__firestoreClient;
+if(typeof fs != 'undefined') { 
+	{dialog.object}.firestoreLogout({silent:true})
+};
+%str%
+end if 
+ 
+
+if eval_valid("request.variables.logout") then  'happens when logging out from the tabbedUI
+	if request.variables.logout = "cognitoLogout" then 
+		e.javascript = e.javascript + "" + "{dialog.object}._functions.cognitoLogout()"
+	end if 
+end if 
+if eval_valid("request.variables.__awscognito_code") then 
+	'function sets the value of e.javascript
+	a5dialogHelper_completeLoginwithCognito(e)
+	exit function 
+end if 
+
+'this code is used when the 'Persistent login' property is enabled and the 'After login behavior' is set to give focus to another component (typically a Tabbed UI)
+'the purpose of the code is to prevent authomaic re-log in to th application when the user logs out from the Tabbed UI.
+dim e.javascript as c = default ""
+e.javascript = e.javascript + ";" + "window.__logoutfromTabbedUI = false;"
+
+if eval_valid("request.variables.logout") then 
+	if request.variables.logout = "true" then  
+		e.javascript = e.javascript + "window.__logoutfromTabbedUI = true; alert(44);" 
+		dim key as c = e.tmpl.guid
+		e.javascript = e.javascript + "localStorage.setItem('" + key + "',''); "
+	end if 
+end if  
+if eval_valid("request.variables.useridmode") then 
+	e.javascript = e.javascript + crlf() +  "{dialog.object}.__useridmode = '" + js_escape(request.variables.useridmode)  + "';" + crlf();
+end if 
+
+if eval_valid("request.variables.useridvalue") then 
+	e.javascript = e.javascript + crlf() + "{dialog.object}.__useridvalue = '" + js_escape(request.variables.useridvalue)  + "';" 
+end if 
+if eval_valid("session.___loginwithgoogle") then 
+	if session.___loginwithgoogle <> "" then 
+		dim js as c = completeLoginWithGoogle(e)
+		e.javascript = e.javascript + js 
+		exit function 
+	end if 
+end if 
+
+if eval_valid("request") then 
+	if eval_valid("request.host") then 
+		dim _script_name as c = request.script_name 
+		dim __folderName as c = file.filename_parse(_script_name,"P")
+		dim protocol as c = "http"
+		if eval_valid("request.origin") then 
+			'iis
+			dim _origin as c = request.origin
+			if atc("https",_origin) > 0 then 
+				protocol = "https"
+			end if 
+		else
+			'classic server
+			if eval_valid("serversetting.ssl_enabled") then 
+				if convert_type(ServerSetting.SSL_Enabled,"L") = .t. then 
+					protocol = "https"
+				end if 
+			end if 
+		end if 
+		session.hostNameCallback = protocol + "://" + request.host + __folderName
+		dim e.javascript as c = default ""
+		dim json as c 
+		if eval_valid("e.tmpl.login.googlesettingsjson") then 
+			json = e.tmpl.login.googlesettingsjson
+			dim p as p
+			if json <> "" then 
+				p = json_parse(json)
+			end if 
+			dim p.clientid as c = default ""
+			dim p.secret as c = default ""
+			session.__GoogleLoginClientId = p.clientid
+			session.__GoogleLoginSecret = p.secret
+			session.__origin = Request.REQUEST_URI
+			e.javascript = e.javascript + ";" + crlf() + "{dialog.object}.__clientid = '" + session.__GoogleLoginClientId + "';"
+		end if 
+	end if 
+end if 
+end function
+
+
+
+
+function completeLoginWithGoogle as c (e as p)
+	a5DialogHelper_completeLoginWithGoogle(e)
+end function 
+'TIP: You can encrypt this file when it is saved, or password protect it, by adding a special comment to the first line of the file (with no leading spaces).
+'To encrypt the file, set the comment on the first line to: 'ENCRYPTED
+'To password protect the file (which will also encrypt it), set the comment on the first line to: 'PASSWORD:your_password_phrase
+'To create a compiled AEX library (when this project is published), add the comment 'COMPILEAEX at the START of a line in the code.
+
+'
+'You can reference functions defined in other function libraries by using the compile_xbasic_function_library() function.
+'For example: dim p as p; p = compile_xbasic_function_library("name of library");

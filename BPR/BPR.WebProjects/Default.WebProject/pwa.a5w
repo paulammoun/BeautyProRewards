@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<!-- must use in order to make XP Themes render -->
+<meta HTTP-EQUIV="MSThemeCompatible" content="Yes" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<head>
+
+
+<!--You can define a page comment and description that will be displayed in the Web Control Panel. For example-->
+<!-- comment -- comment -->
+<!-- description -- description -->
+
+<%a5
+
+
+Delete tmpl_pwa
+DIM tmpl_pwa as P
+tmpl_pwa = a5w_load_component("pwa") ''SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (LOAD:pwa)
+
+'Override settings start -----------------------------------------
+with tmpl_pwa
+.alias = "pwa"
+_dialogFilename = "pwa"
+end with 
+'Override settings end -----------------------------------------
+
+delete x_pwa
+dim x_pwa as p
+x_pwa = a5w_run_Component(tmpl_pwa) 'SYSTEM GENERATED COMMENT - PLEASE DO NOT REMOVE (RUN:tmpl) (EDIT:pwa)
+
+?x_pwa.Output.Head.JavaScript
+?x_pwa.Output.Head.CSS_Link
+
+?x_pwa.Output.Head.Title 
+%>
+
+
+
+
+</head>
+
+
+<%a5 ?x_pwa.Output.Body.Body_tag %>
+<!--Alpha Anywhere Temporary Code Start - Will be automatically removed when page is published -->
+<!--Body Tag for tmpl -->
+<body class="page">
+<!--Alpha Anywhere Temporary Code End -->	
+
+
+
+
+
+<%a5 ?x_pwa.Output.Body.Dialog2_HTML %>
+<%a5 ?a5dialogHelper_generateCORSHeaders() %>
+
+</body>
+
+</html>
+

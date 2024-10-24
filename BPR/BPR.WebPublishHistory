@@ -1,0 +1,1116 @@
+<PubHist<[1]<type="calendaricons">
+<name="calendaricons">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:06 86 pm')>
+<keep=.T.>
+>
+<[2]<type="folder">
+<name="ExeReportStyles">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:07:59 99 pm')>
+<keep=.T.>
+>
+<[3]<type="folder">
+<name="ExeChartStyles">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:07:59 99 pm')>
+<keep=.T.>
+>
+<[4]<type="folder">
+<name="AppDataChartStyles">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:07:59 99 pm')>
+<keep=.T.>
+>
+<[5]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\index.a5w}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 11 pm')>
+<keep=.T.>
+>
+<[6]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\tabbedui_menu.a5w}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 12 pm')>
+<keep=.T.>
+>
+<[7]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\countries_ux.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 27 pm')>
+<keep=.T.>
+>
+<[8]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 40 pm')>
+<keep=.T.>
+>
+<[9]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\menu.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 30 pm')>
+<keep=.T.>
+>
+<[10]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\ppp.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 30 pm')>
+<keep=.T.>
+>
+<[11]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\salons.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 34 pm')>
+<keep=.T.>
+>
+<[12]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\css\font-awesome.css}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 34 pm')>
+<keep=.T.>
+>
+<[13]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\css\font-awesome.min.css}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 34 pm')>
+<keep=.T.>
+>
+<[14]<type="css">
+<name="a5system">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 39 pm')>
+<keep=.T.>
+>
+<[15]<type="css">
+<name="alpha">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 74 pm')>
+<keep=.T.>
+>
+<[16]<type="css">
+<name="alpha-dark">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:07 93 pm')>
+<keep=.T.>
+>
+<[17]<type="css">
+<name="alpha-dark-green">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 11 pm')>
+<keep=.T.>
+>
+<[18]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\pages.securitysettings}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:09:02 74 pm')>
+<keep=.T.>
+>
+<[19]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\project.securitysettings}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:09:02 75 pm')>
+<keep=.T.>
+>
+<[20]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_27864\font_mapping.txt}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:09:02 75 pm')>
+<keep=.T.>
+>
+<[21]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_27864\robots.txt}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:09:02 76 pm')>
+<keep=.T.>
+>
+<[22]<type="css">
+<name="cssicons">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 19 pm')>
+<keep=.T.>
+>
+<[23]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\datalink.securitysettings}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 19 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[24]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\__aafunctionlibrary_login.aex}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:09:02 76 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[25]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\__livetestsettings.json}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 20 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[26]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\accenteditborder.png}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 20 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[27]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\accentforeeditborder.png}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 21 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[28]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\contrasteditborder.png}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 21 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[29]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\headereditborder.png}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 21 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[30]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\spinlistback.png}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 21 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[31]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\style.dat}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 22 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[32]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\styleinherit.json}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 22 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[33]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.eot}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 22 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[34]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.svg}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 22 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[35]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.ttf}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 23 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[36]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.woff2}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 23 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[37]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.woff}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 23 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[38]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome.otf}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 23 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[39]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\istockphoto-621695640-612x612.jpg}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 23 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[40]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5xbfl}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 24 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[41]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.js}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 24 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[42]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\loginsvg.svg}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:00:08 24 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[43]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\projectproperties.projectproperties}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 57 pm')>
+<project="Default">
+<profile="FTP">
+<keep=.T.>
+>
+<[44]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\insufficientpermission.a5w}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 14 pm')>
+>
+<[45]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5w}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 14 pm')>
+>
+<[46]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\tabbedui_mastertabbedui.a5w}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 15 pm')>
+>
+<[47]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\activeusers.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 19 pm')>
+>
+<[48]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\admin_maintainusersandgroups.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 32 pm')>
+>
+<[49]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\extended_user_information.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 33 pm')>
+>
+<[50]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\genericsqldataeditor.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 38 pm')>
+>
+<[51]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\lll.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 39 pm')>
+>
+<[52]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login_jsonform.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 44 pm')>
+>
+<[53]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login_jsonform_imageleft.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 49 pm')>
+>
+<[54]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\mastertabbedui.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 51 pm')>
+>
+<[55]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\reset_password.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 53 pm')>
+>
+<[56]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\two_factor_authentication_preferences.a5wcmp}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 54 pm')>
+>
+<[57]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\readme.txt}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 57 pm')>
+<project="Default">
+<profile="FTP">
+>
+<[58]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_groups.backup_dbf}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 57 pm')>
+<project="Default">
+<profile="FTP">
+>
+<[59]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_members.backup_dbf}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 57 pm')>
+<project="Default">
+<profile="FTP">
+>
+<[60]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_users.backup_dbf}">
+<target_folder="c:\a5webroot\bpr">
+<timestamp=CTODT('14/10/2024 08:08:00 58 pm')>
+<project="Default">
+<profile="FTP">
+>
+<[61]<type="calendaricons">
+<name="calendaricons">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 03 am')>
+>
+<[62]<type="library">
+<name="library">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('14/10/2024 08:15:16 32 pm')>
+>
+<[63]<type="folder">
+<name="ExeReportStyles">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 08 am')>
+>
+<[64]<type="folder">
+<name="ExeChartStyles">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 13 am')>
+>
+<[65]<type="folder">
+<name="AppDataChartStyles">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 17 am')>
+>
+<[66]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\index.a5w}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 30 am')>
+>
+<[67]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\insufficientpermission.a5w}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 30 am')>
+>
+<[68]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5w}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 31 am')>
+>
+<[69]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\tabbedui_mastertabbedui.a5w}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 32 am')>
+>
+<[70]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\tabbedui_menu.a5w}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 33 am')>
+>
+<[71]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\activeusers.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 38 am')>
+>
+<[72]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\admin_maintainusersandgroups.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 49 am')>
+>
+<[73]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\countries_ux.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 67 am')>
+>
+<[74]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\extended_user_information.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 68 am')>
+>
+<[75]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\genericsqldataeditor.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 73 am')>
+>
+<[76]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\lll.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('14/10/2024 08:15:17 03 pm')>
+>
+<[77]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 89 am')>
+>
+<[78]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login_jsonform.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 93 am')>
+>
+<[79]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login_jsonform_imageleft.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 98 am')>
+>
+<[80]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\mastertabbedui.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 01 am')>
+>
+<[81]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\menu.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 06 am')>
+>
+<[82]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\ppp.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 07 am')>
+>
+<[83]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\reset_password.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 17 am')>
+>
+<[84]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\salons.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 31 am')>
+>
+<[85]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\two_factor_authentication_preferences.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 33 am')>
+>
+<[86]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\css\font-awesome.css}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 33 am')>
+>
+<[87]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\css\font-awesome.min.css}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 34 am')>
+>
+<[88]<type="css">
+<name="a5system">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 40 am')>
+>
+<[89]<type="css">
+<name="alpha">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 85 am')>
+>
+<[90]<type="css">
+<name="alpha-dark">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('15/10/2024 10:49:36 08 am')>
+>
+<[91]<type="css">
+<name="alpha-dark-green">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 05 am')>
+>
+<[92]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\pages.securitysettings}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 38 am')>
+>
+<[93]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\project.securitysettings}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 39 am')>
+>
+<[94]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_27864\font_mapping.txt}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('15/10/2024 10:54:59 92 am')>
+>
+<[95]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_27864\robots.txt}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('15/10/2024 10:54:59 92 am')>
+>
+<[96]<type="css">
+<name="cssicons">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 39 am')>
+>
+<[97]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\datalink.securitysettings}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 40 am')>
+>
+<[98]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\__aafunctionlibrary_login.aex}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 40 am')>
+>
+<[99]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\__livetestsettings.json}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 40 am')>
+>
+<[100]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\accenteditborder.png}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 41 am')>
+>
+<[101]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\accentforeeditborder.png}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 42 am')>
+>
+<[102]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\contrasteditborder.png}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 42 am')>
+>
+<[103]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\headereditborder.png}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 42 am')>
+>
+<[104]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\spinlistback.png}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 42 am')>
+>
+<[105]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\style.dat}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 43 am')>
+>
+<[106]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\styleinherit.json}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 43 am')>
+>
+<[107]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.eot}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 43 am')>
+>
+<[108]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.svg}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 44 am')>
+>
+<[109]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.ttf}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 44 am')>
+>
+<[110]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.woff2}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 44 am')>
+>
+<[111]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.woff}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 45 am')>
+>
+<[112]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome.otf}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 45 am')>
+>
+<[113]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\istockphoto-621695640-612x612.jpg}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 45 am')>
+>
+<[114]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5xbfl}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 45 am')>
+>
+<[115]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.js}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 46 am')>
+>
+<[116]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\loginsvg.svg}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 46 am')>
+>
+<[117]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\projectproperties.projectproperties}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 47 am')>
+>
+<[118]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\readme.txt}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 47 am')>
+>
+<[119]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_groups.backup_dbf}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 50 am')>
+>
+<[120]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_members.backup_dbf}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 51 am')>
+>
+<[121]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_users.backup_dbf}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 51 am')>
+>
+<[122]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\menu_ux.a5w}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 31 am')>
+>
+<[123]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\menu_ux.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('15/10/2024 10:54:59 91 am')>
+>
+<[124]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_2460\font_mapping.txt}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 39 am')>
+>
+<[125]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_2460\robots.txt}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 39 am')>
+>
+<[126]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\animation - 1729412558826 (1).gif}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 41 am')>
+<project="Default">
+<profile="FTP">
+>
+<[127]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\untitled design.gif}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 50 am')>
+<project="Default">
+<profile="FTP">
+>
+<[128]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\morph color animations.gif}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 46 am')>
+<project="Default">
+<profile="FTP">
+>
+<[129]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\gifts.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 81 am')>
+>
+<[130]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\hairdresserspoints.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 88 am')>
+>
+<[131]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\animated_splash_screen.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 51 am')>
+>
+<[132]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\animated_splash_screen_with_svg_viewbox.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:32 53 am')>
+>
+<[133]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\pwa.a5wcmp}">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:33 13 am')>
+>
+<[134]<type="css">
+<name="grblue">
+<target_folder="c:\a5webroot\bpr1">
+<timestamp=CTODT('22/10/2024 12:54:34 23 am')>
+>
+<[135]<type="calendaricons">
+<name="calendaricons">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 26 am')>
+>
+<[136]<type="folder">
+<name="ExeReportStyles">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 52 am')>
+>
+<[137]<type="folder">
+<name="ExeChartStyles">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 52 am')>
+>
+<[138]<type="folder">
+<name="AppDataChartStyles">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 52 am')>
+>
+<[139]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\index.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 54 am')>
+>
+<[140]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\insufficientpermission.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 55 am')>
+>
+<[141]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 55 am')>
+>
+<[142]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\menu_ux.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 56 am')>
+>
+<[143]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\tabbedui_mastertabbedui.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 56 am')>
+>
+<[144]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\tabbedui_menu.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 57 am')>
+>
+<[145]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\activeusers.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 62 am')>
+>
+<[146]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\admin_maintainusersandgroups.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 76 am')>
+>
+<[147]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\animated_splash_screen.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 78 am')>
+>
+<[148]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\animated_splash_screen_with_svg_viewbox.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 81 am')>
+>
+<[149]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\countries_ux.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 96 am')>
+>
+<[150]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\extended_user_information.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:39 97 am')>
+>
+<[151]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\genericsqldataeditor.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 02 am')>
+>
+<[152]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\gifts.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 10 am')>
+>
+<[153]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\hairdresserspoints.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 17 am')>
+>
+<[154]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 19 am')>
+>
+<[155]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login_jsonform.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 22 am')>
+>
+<[156]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login_jsonform_imageleft.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 26 am')>
+>
+<[157]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\mastertabbedui.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 28 am')>
+>
+<[158]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\menu.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 31 am')>
+>
+<[159]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\ppp.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 32 am')>
+>
+<[160]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\pwa.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 73 am')>
+>
+<[161]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\reset_password.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 42 am')>
+>
+<[162]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\salons.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 58 am')>
+>
+<[163]<type="WebComponent">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\two_factor_authentication_preferences.a5wcmp}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 58 am')>
+>
+<[164]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\css\font-awesome.css}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 59 am')>
+>
+<[165]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\css\font-awesome.min.css}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 59 am')>
+>
+<[166]<type="css">
+<name="a5system">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:40 69 am')>
+>
+<[167]<type="css">
+<name="alpha">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:41 54 am')>
+>
+<[168]<type="css">
+<name="alpha-dark-green">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:41 71 am')>
+>
+<[169]<type="css">
+<name="grblue">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:41 92 am')>
+>
+<[170]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\pages.securitysettings}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 75 am')>
+>
+<[171]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\project.securitysettings}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 08 am')>
+>
+<[172]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_2460\font_mapping.txt}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 75 am')>
+>
+<[173]<type="file">
+<name="{c:\users\paul\appdata\local\temp\alphaanywhere\p_2460\robots.txt}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 75 am')>
+>
+<[174]<type="css">
+<name="cssicons">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 09 am')>
+>
+<[175]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\datalink.securitysettings}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 09 am')>
+>
+<[176]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\__aafunctionlibrary_login.aex}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 76 am')>
+>
+<[177]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\__livetestsettings.json}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 10 am')>
+>
+<[178]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\animation - 1729412558826 (1).gif}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 10 am')>
+>
+<[179]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\accenteditborder.png}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 11 am')>
+>
+<[180]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\accentforeeditborder.png}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 11 am')>
+>
+<[181]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\contrasteditborder.png}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 11 am')>
+>
+<[182]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\headereditborder.png}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 12 am')>
+>
+<[183]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\spinlistback.png}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 12 am')>
+>
+<[184]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\style.dat}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 12 am')>
+>
+<[185]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\alpha-dark\styleinherit.json}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 13 am')>
+>
+<[186]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.eot}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 13 am')>
+>
+<[187]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.svg}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 13 am')>
+>
+<[188]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.ttf}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 14 am')>
+>
+<[189]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.woff2}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 14 am')>
+>
+<[190]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome-webfont.woff}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 14 am')>
+>
+<[191]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\css\cssicons\font-awesome\fonts\fontawesome.otf}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 14 am')>
+>
+<[192]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\istockphoto-621695640-612x612.jpg}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 15 am')>
+>
+<[193]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.a5xbfl}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 15 am')>
+>
+<[194]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\login.js}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 15 am')>
+>
+<[195]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\loginsvg.svg}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 16 am')>
+>
+<[196]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\morph color animations.gif}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 16 am')>
+>
+<[197]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\projectproperties.projectproperties}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 16 am')>
+>
+<[198]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\readme.txt}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 17 am')>
+>
+<[199]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\untitled design.gif}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 18 am')>
+>
+<[200]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_groups.backup_dbf}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 18 am')>
+>
+<[201]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_members.backup_dbf}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 19 am')>
+>
+<[202]<type="file">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\websecurity_users.backup_dbf}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 12:55:42 19 am')>
+>
+<[203]<type="A5WPage">
+<name="{c:\beautyprorewards\bpr\bpr.webprojects\default.webproject\pwa.a5w}">
+<target_folder="tempftp___1___1\bpr">
+<timestamp=CTODT('22/10/2024 01:18:04 66 am')>
+>
+>
+<connectionStringCRC=4294961996>
